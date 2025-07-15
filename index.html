@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>トワとセツナ ナンバーグリモワール</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@700&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-head">
+    <div id="logo">
+      <div class="jp-title">トワとセツナ　ナンバーグリモワール</div>
+      <div class="en-logo">
+        <span class="neon">Grimoire</span> <span class="en-sub">of</span> <span class="neon">Numbers</span>
+      </div>
+    </div>
+    <div class="scene">
+      <div class="book" id="book">
+      <div class="cover front"><img src="img/cover.png" alt="魔導書表紙"></div>
+      <div class="page p1"><img src="img/page.jpg" alt="ページ"></div>
+      <div class="page p2"><img src="img/page.jpg" alt="ページ"></div>
+      <div class="page p3"><img src="img/page.jpg" alt="ページ"></div>
+      <div class="cover back"></div>
+    </div>
+    </div>
+  </div>
+</div>
+   <div id="game-ui" class="hide">
+    <input id="guess" type="number" min="1" max="100" autocomplete="off" placeholder="1〜100">
+    <button class="primary" id="btn-guess">決定</button>
+    <button id="again" style="display:none;">もう一度あそぶ</button>
+    <div id="log">1〜100 の整数を当てて！</div>
+    <div id="char-area">
+      <div id="setsuna-area" class="char-area hide">
+        <img src="img/setsuna.png" id="setsuna" class="char" alt="セツナ">
+        <div class="balloon" id="setsuna-balloon"></div>
+      </div>
+      <div id="towa-area" class="char-area hide">
+        <img src="img/towa.png" id="towa" class="char" alt="トワ">
+        <div class="balloon" id="towa-balloon"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/game.js"></script>
+</body>
+</html>
