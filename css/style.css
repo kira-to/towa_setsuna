@@ -69,19 +69,13 @@ button.primary:hover {
   z-index: 2;
 }
 
-#towa-area.char-area {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-}
-#setsuna-area.char-area {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
+.scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  margin: 0 auto;
+  position: relative;
 }
 .char-area {
   width: 110px;
@@ -90,16 +84,25 @@ button.primary:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+}
+.book {
+  width: 230px;
+  height: 230px;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 600px) {
   .scene {
     width: 98vw;
-    height: 36vw;
-    min-height: 140px;
     max-width: 99vw;
   }
   .char-area {
     width: 60px;
+    height: 120px;
+  }
+  .book {
+    width: 120px;
     height: 120px;
   }
 }
