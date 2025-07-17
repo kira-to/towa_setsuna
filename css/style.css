@@ -54,14 +54,48 @@ button.primary:hover {
 }
 
 .scene {
-  position: static;
+  position: relative;
   width: 360px;
   height: 230px;
-  margin: 0 24px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+}
+
+.char-abs {
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  max-width: 30vw;
+  z-index: 5;
+  pointer-events: none;
+  transition: filter 0.3s;
+}
+.char-abs-towa {
+  left: -80px;
+}
+.char-abs-setsuna {
+  right: -80px;
+}
+@media (max-width: 600px) {
+  .scene {
+    width: 98vw;
+    height: 36vw;
+    min-height: 140px;
+    max-width: 99vw;
+  }
+  .char-abs {
+    width: 70px;
+    max-width: 22vw;
+  }
+  .char-abs-towa {
+    left: -32px;
+  }
+  .char-abs-setsuna {
+    right: -32px;
+  }
 }
 .char-area {
   width: 110px;
