@@ -83,29 +83,27 @@ button.primary:hover {
   margin: 0 auto;
 }
 
-/* 装飾用キャラクラスを追加 */
-.book-wrapper:before,
-.book-wrapper:after {
-  content: "";
+/* 装飾用キャラクター（常に表示） */
+.deco-char {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 60px;
   height: 140px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   z-index: 3;
 }
 
-.book-wrapper:before {
-  left: -75px;
-  background-image: url(../img/towa.png);
+.deco-char img {
+  width: 100%;
+  height: auto;
 }
 
-.book-wrapper:after {
-  right: -75px;
-  background-image: url(../img/setsuna.png);
+.deco-char.left {
+  left: 15px;
+}
+
+.deco-char.right {
+  right: 15px;
 }
 
 .book {
