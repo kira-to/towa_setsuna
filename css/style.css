@@ -83,6 +83,13 @@ button.primary:hover {
   margin: 0 auto;
 }
 
+/* .book-wrapper内のキャラエリアは常に表示 */
+.book-wrapper .char-area {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 .book {
   width: 180px;
   height: 180px;
@@ -91,26 +98,26 @@ button.primary:hover {
   z-index: 2;
 }
 
-#towa-area.char-area,
-#setsuna-area.char-area {
+.book-wrapper #towa-area.char-area,
+.book-wrapper #setsuna-area.char-area {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 60px;
   height: 140px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   z-index: 3;
 }
 
-#towa-area.char-area {
-  left: -65px;
+.book-wrapper #towa-area.char-area {
+  left: -75px;
 }
 
-#setsuna-area.char-area {
-  right: -65px;
+.book-wrapper #setsuna-area.char-area {
+  right: -75px;
 }
 
 .char {
