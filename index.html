@@ -16,7 +16,14 @@
       </div>
     </div>
     <div class="scene">
-    <div class="book-wrapper">
+      <!-- 装飾用キャラクター（本の左右に配置） -->
+      <div class="decoration-char left">
+        <img src="img/towa.png" alt="トワ">
+      </div>
+      <div class="decoration-char right">
+        <img src="img/setsuna.png" alt="セツナ">
+      </div>
+      
       <div class="book" id="book">
         <div class="cover front"><img src="img/cover.png" alt="魔導書表紙"></div>
         <div class="page p1"><img src="img/page.jpg" alt="ページ"></div>
@@ -24,15 +31,10 @@
         <div class="page p3"><img src="img/page.jpg" alt="ページ"></div>
         <div class="cover back"></div>
       </div>
-      <div id="setsuna-area" class="char-area hide">
-        <img src="img/setsuna.png" id="setsuna" class="char" alt="セツナ">
-        <div class="balloon" id="setsuna-balloon"></div>
-      </div>
-    </div>
     </div>
   </div>
-</div>
-   <div id="game-ui" class="hide">
+
+  <div id="game-ui" class="hide">
     <input id="guess" type="number" min="1" max="100" autocomplete="off" placeholder="1〜100">
     <button class="primary" id="btn-guess">決定</button>
     <button id="again" style="display:none;">もう一度あそぶ</button>
@@ -48,6 +50,6 @@
       </div>
     </div>
   </div>
-  <script src="js/game.js"></script>
+  <script src="js/game_final.js"></script>
 </body>
 </html>
