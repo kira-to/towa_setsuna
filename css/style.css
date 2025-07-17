@@ -70,13 +70,58 @@ button.primary:hover {
 }
 
 .scene {
+  position: relative;
+  width: 360px;
+  height: 230px;
+  margin: 0 auto;
+}
+
+.book {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 360px;
-  margin: 0 auto;
-  position: relative;
 }
+
+#towa-area.char-area {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 70px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#setsuna-area.char-area {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 70px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.char {
+  width: 100%;
+  height: auto;
+}
+
 
 .char-area {
   width: 60px;
@@ -107,11 +152,9 @@ button.primary:hover {
 @media (max-width: 600px) {
   .scene {
     width: 98vw;
+    height: 120px;
+    min-height: 80px;
     max-width: 99vw;
-  }
-  .char-area {
-    width: 32px;
-    height: 60px;
   }
   .book {
     width: 70px;
@@ -119,7 +162,8 @@ button.primary:hover {
   }
   #towa-area.char-area,
   #setsuna-area.char-area {
-    margin: 8px;
+    width: 32px;
+    height: 60px;
   }
 }
 
