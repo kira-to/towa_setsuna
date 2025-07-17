@@ -83,33 +83,7 @@ button.primary:hover {
   margin: 0 auto;
 }
 
-/* 装飾用キャラクター（scene表示時のみ表示） */
-.deco-char {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35px; /* 大幅に縮小 */
-  height: 80px; /* 大幅に縮小 */
-  z-index: 3;
-}
 
-/* sceneが非表示のときは装飾用キャラも非表示 */
-.scene[style*="display: none"] .deco-char {
-  display: none;
-}
-
-.deco-char img {
-  width: 100%;
-  height: auto;
-}
-
-.deco-char.left {
-  left: 40px; /* 本から距離を取る */
-}
-
-.deco-char.right {
-  right: 40px; /* 本から距離を取る */
-}
 
 .book {
   width: 180px;
