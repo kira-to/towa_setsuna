@@ -69,37 +69,27 @@ button.primary:hover {
   z-index: 2;
 }
 
-.char-abs {
+.char-area {
+  width: 110px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 90px;
-  max-width: 22vw;
-  z-index: 3;
-  pointer-events: none;
 }
-.char-abs-towa {
-  left: -85px;
+#towa-area.char-area {
+  left: 0;
 }
-.char-abs-setsuna {
-  right: -85px;
+#setsuna-area.char-area {
+  right: 0;
 }
 @media (max-width: 600px) {
-  .scene {
-    width: 98vw;
-    height: 36vw;
-    min-height: 140px;
-    max-width: 99vw;
-  }
-  .char-abs {
-    width: 48px;
-    max-width: 14vw;
-  }
-  .char-abs-towa {
-    left: -38px;
-  }
-  .char-abs-setsuna {
-    right: -38px;
+  .char-area {
+    width: 60px;
+    height: 120px;
   }
 }
 
