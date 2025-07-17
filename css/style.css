@@ -67,18 +67,23 @@ button.primary:hover {
 .char-abs {
   position: absolute;
   bottom: 0;
-  width: 120px;
-  max-width: 30vw;
+  top: 50%;
+  transform: translateY(30%) scale(1);
+  width: 110px;
+  max-width: 28vw;
   z-index: 5;
   pointer-events: none;
   transition: filter 0.3s;
 }
 .char-abs-towa {
-  left: -80px;
+  left: 0;
+  transform: translate(-65%,30%) scale(1);
 }
 .char-abs-setsuna {
-  right: -80px;
+  right: 0;
+  transform: translate(65%,30%) scale(1);
 }
+
 @media (max-width: 600px) {
   .scene {
     width: 98vw;
@@ -87,14 +92,18 @@ button.primary:hover {
     max-width: 99vw;
   }
   .char-abs {
-    width: 70px;
-    max-width: 22vw;
+    width: 58px;
+    max-width: 18vw;
+    top: 55%;
+    transform: translateY(10%) scale(1);
   }
   .char-abs-towa {
-    left: -32px;
+    left: 0;
+    transform: translate(-70%,10%) scale(1);
   }
   .char-abs-setsuna {
-    right: -32px;
+    right: 0;
+    transform: translate(70%,10%) scale(1);
   }
 }
 .char-area {
