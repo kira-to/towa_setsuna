@@ -83,11 +83,29 @@ button.primary:hover {
   margin: 0 auto;
 }
 
-/* .book-wrapper内のキャラエリアは常に表示 */
-.book-wrapper .char-area {
-  display: flex !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+/* 装飾用キャラクラスを追加 */
+.book-wrapper:before,
+.book-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 140px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+}
+
+.book-wrapper:before {
+  left: -75px;
+  background-image: url(../img/towa.png);
+}
+
+.book-wrapper:after {
+  right: -75px;
+  background-image: url(../img/setsuna.png);
 }
 
 .book {
@@ -98,26 +116,15 @@ button.primary:hover {
   z-index: 2;
 }
 
-.book-wrapper #towa-area.char-area,
-.book-wrapper #setsuna-area.char-area {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+/* ゲーム内のキャラエリアは通常通り動作 */
+#game-ui .char-area {
+  position: relative;
   width: 60px;
   height: 140px;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 3;
-}
-
-.book-wrapper #towa-area.char-area {
-  left: -75px;
-}
-
-.book-wrapper #setsuna-area.char-area {
-  right: -75px;
 }
 
 .char {
